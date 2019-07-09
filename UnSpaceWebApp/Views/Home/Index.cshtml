@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style type="text/css">
+    img.bg {
+        margin: 0;
+        padding: 0;
+        background-image: url(../../Content/Images/background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        z-index: -999;
+        top: 0;
+        left: 100px;
+    }
+
+    .btn {
+        background: none;
+        padding: 20px 40px;
+        font-size: 2em;
+        font-family: "Segoe UI";
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.9s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn:hover{
+        color:orange;
+    }
+
+    .hoverButton{
+        display:inline-block;
+        width:300px;
+        padding:100px 0;
+        background-color:skyblue;
+    }
+
+    .hoverButton2 {        
+        display:inline-block;
+        width:300px;
+        padding:100px 0;
+        background-color:orange;
+    }
+
+    .hoverButton:hover,.hoverButton2:hover {
+        background-color: royalblue;
+        color:white;
+        font-weight:bold;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 30px;
+        color: whitesmoke;
+    }
+</style>
+
+
+    <div style="padding:15px;margin:0 auto;background-color:whitesmoke;width:700px;display:block;text-align:center;box-shadow:0 0 2px gray;border:2px solid #4169e1">
+        <div style="margin:0 auto;width:650px;text-align:center;padding:0;">
+            <div class="hoverButton">
+                <form class="myForm" action="../Space/Index" method="post">
+                    <button style="outline:none;box-shadow:none;" class="btn">Create Space</button>
+                </form>
+            </div>
+            <div class="hoverButton2">
+                <form action="../Home/Favorites" method="post">
+                    <button style="outline:none;box-shadow:none;" class="btn">View Your Spaces</button>
+                </form>
+            </div>
+        </div>
+    </div>
